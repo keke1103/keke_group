@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <!-- 首页 -->
+    <string name="app_name">蹭课</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cq">重庆</string>
+    <string name="musicclass">音乐类</string>
+    <string name="much">更多</string>
+    <string name="erhu">二胡十段兴趣班</string>
+    <string name="piano">钢琴初级班</string>
+    <string name="smallpiano">小提琴兴趣班</string>
+    <string name="classical">古典乐兴趣班</string>
+    <string name="homepage">首页</string>
+    <string name="sort">分类</string>
+    <string name="ring">圈子</string>
+    <string name="mine">我</string>
+   <!-- 登录注册 -->
+    <string name="logginregister">登录注册</string>
+    <string name="fastregister">极速注册</string>
+    <string name="loggin">登录</string>
+    <string name="start">开启你的学海无涯快乐蹭课!</string>
+   <!--  登录注册-登录 --> 
+    <string name="donedata">完善资料</string>
+    <string name="register">注册</string>
+    <string name="tel_email">手机号/邮箱</string>
+    <string name="password">密码</string>
+    <string name="now_register">立即注册</string>
+    <string name="forgetpassword">忘记密码？</string>
+  <!--   注册登录-登录-设置新密码 -->
+  <string name="setnewpassword">设置新密码</string>
+  <string name="input_code">输入验证码</string>
+  <string name="againsend">重新发送</string>
+  <string name="confirm">确认</string>
+  <!-- 登录-注册-填写手机号 -->
+  <string name="writetel">填写手机号</string>
+  <string name="inputtelcode">请输入手机验证码</string>
+  <string name="getcode">获取验证码</string>
+  <string name="next">下一步</string>
+  <string name="hasread">我已阅读并同意</string>
+  <string name="protocol">蹭课服务条款</string>
+  <!-- 注册-登录-完善资料 -->
+ <string name="nickname">请输入用户昵称</string>
+ <string name="inputpassword">请输入密码</string>
+ <string name="start_cengke">开启蹭课之旅</string>
+<!--  发帖 -->
+ <string name="postmessage">发帖</string>
+ <string name="post">发布</string>
+ <string name="title">标题（必选）</string>
+ <string name="content">内容（不少于5个字）</string>
+ <!-- 关于我们 -->
+ <string name="aboutus">关于我们</string>
+ <string name="cengke">蹭课</string>
+ <string name="version">版本1.01</string>
+ <string name="describe">    登录双方的健康来说都放假了快捷付款谁开的房间发多少就开了房间卡死啦九分裤撒打开了房间爱死了开放接口连接爱上对方即可拉伸的解放路口</string>
+ <string name="serviceprotocol">服务条款</string>
+ <string name="cqcompany">重庆科技有限公司</string>
+ 
+</resources>

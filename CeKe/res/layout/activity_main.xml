@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.groupkk.ceke.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layou_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/drive_line_color" />
+
+    <RadioGroup
+        android:id="@+id/bottom_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp" >
+
+        <RadioButton
+            android:id="@+id/radio_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_for_homepage"
+            android:gravity="center_horizontal"
+            android:text="@string/homepage"
+            android:textColor="@color/main_orange" />
+
+        <RadioButton
+            android:id="@+id/radio_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_for_sort"
+            android:gravity="center_horizontal"
+            android:text="@string/sort"
+            android:textColor="@color/other_text_gray" />
+
+        <RadioButton
+            android:id="@+id/radio_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_for_ring"
+            android:gravity="center_horizontal"
+            android:text="@string/ring"
+            android:textColor="@color/other_text_gray" />
+
+        <RadioButton
+            android:id="@+id/radio_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_for_mine"
+            android:gravity="center_horizontal"
+            android:text="@string/mine"
+            android:textColor="@color/other_text_gray" />
+    </RadioGroup>
+
+</LinearLayout>

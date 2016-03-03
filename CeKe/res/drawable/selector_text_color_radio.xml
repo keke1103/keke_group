@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- fa7122 -->
+
+    <item android:state_checked="true" android:state_window_focused="false"><color android:color="#fa7122"></color></item>
+    <item android:state_checked="true"><color android:color="#fa7122"></color></item>
+    <item android:state_checked="false"><color android:color="#9B9B9B"></color></item>
+
+</selector>

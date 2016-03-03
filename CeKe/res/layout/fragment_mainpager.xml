@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 首页标题布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp" >
+
+        <TextView
+            android:id="@+id/left_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/rub_course_pull_down_menu"
+            android:drawableRight="@drawable/rub_course_pull_down_menu"
+            android:gravity="center_vertical"
+            android:text="@string/cq"
+            android:textColor="@color/main_orange"
+            android:textSize="17sp" />
+
+        <!-- 编辑框布局 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_sertch_shape" >
+
+            <EditText
+                android:id="@+id/search_edit"
+                style="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/search_icon_"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:padding="6dp"
+                android:src="@drawable/rub_course_search" />
+        </LinearLayout>
+        
+        
+        <!-- 用户提示布局 -->
+
+        <AbsoluteLayout
+            android:id="@+id/user_hint_layout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_for_user_hiti" >
+
+            <View
+                android:id="@+id/user_hint"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_x="17dp"
+                android:layout_y="5dp"
+                android:background="@drawable/shape_for_user_hiti2" />
+        </AbsoluteLayout>
+    </LinearLayout>
+    
+    <!-- 广告位，广告图片作为背景放置 -->
+
+    <View android:id="@+id/title_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/backgroud_color"/>
+    
+    
+
+</LinearLayout>
