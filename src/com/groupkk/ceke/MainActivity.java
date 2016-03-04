@@ -39,6 +39,7 @@ public class MainActivity extends FragmentActivity {
 	CricleFragment mCricleFragment;
 	PersonalCenterFragment personalCenterFragment;
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -74,6 +75,7 @@ public class MainActivity extends FragmentActivity {
 
 	OnCheckedChangeListener bottomChange = new OnCheckedChangeListener() {
 
+		@Override
 		public void onCheckedChanged(RadioGroup group, int checkedId) {
 			initRadiaoBut();
 		}

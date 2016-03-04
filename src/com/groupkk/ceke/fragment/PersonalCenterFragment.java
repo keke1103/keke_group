@@ -26,7 +26,7 @@ public class PersonalCenterFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		LinearLayout linearLayout=new LinearLayout(getActivity());
-		LayoutParams layoutParams=new LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+		LayoutParams layoutParams=new LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT,android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
 		linearLayout.setLayoutParams(layoutParams);
 		View view=inflater.inflate(R.layout.fragment_personal_layout,linearLayout,true);
 		return view;
