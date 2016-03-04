@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <color name="main_red">#F53A07</color>
     <color name="main_orange">#fa7122</color>
     <color name="other_text_gray">#9B9B9B</color>
+    <color name="main_text_gray">#686868</color>
     <color name="drive_line_color">#EDEDED</color>
     <color name="backgroud_color">#EEEEEE</color>
-	
-	 <color name="yellow">#E49C38</color>
+    <color name="title2_color_black">#051B28</color>
+    <color name="title1_color_black">#292929</color>
+    <color name="yellow">#E49C38</color>
     <color name="huise">#F6F0F0</color>
     <color name="red">#CD1616</color>
     <color name="chinses_huise">#303030</color>
+    <color name="write">#ffffff</color>
+	
+	
+	 <color name="background">#EEEEEE</color>
+    <color name="beizhu">#9B9B9B</color>
+    <color name="register">#ff8417</color>
+    <color name="down_register">#fa7122</color>
+	
+	<color name="auxiliary_color_orange">#ff8417</color>
+	<color name="auxiliary_color_red">#f53907</color>
+	<color name="main_text_gray_and_black">#3D4245</color>
+
 </resources>

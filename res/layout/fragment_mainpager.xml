@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableEnd="@drawable/rub_course_pull_down_menu"
+            android:drawablePadding="5dp"
             android:drawableRight="@drawable/rub_course_pull_down_menu"
             android:gravity="center_vertical"
             android:text="@string/cq"
@@ -38,10 +39,12 @@
             <EditText
                 android:id="@+id/search_edit"
                 style="@null"
+                android:padding="2dp"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:background="@null" />
+                android:background="@null"
+                android:cursorVisible="false" />
 
             <ImageView
                 android:id="@+id/search_icon_"
@@ -52,8 +55,7 @@
                 android:padding="6dp"
                 android:src="@drawable/rub_course_search" />
         </LinearLayout>
-        
-        
+
         <!-- 用户提示布局 -->
 
         <AbsoluteLayout
@@ -71,14 +73,36 @@
                 android:background="@drawable/shape_for_user_hiti2" />
         </AbsoluteLayout>
     </LinearLayout>
-    
-    <!-- 广告位，广告图片作为背景放置 -->
 
-    <View android:id="@+id/title_advertisement"
+    <!-- 正文布局 -->
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/backgroud_color"/>
-    
-    
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 广告位，广告图片作为背景放置 -->
+
+            <View
+                android:id="@+id/title_advertisement"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/backgroud_color" />
+
+            <!-- 课程板块布局 -->
+
+            <LinearLayout
+                android:id="@+id/class_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

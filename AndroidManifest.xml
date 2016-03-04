@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,25 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name=".welcome.LoginAndRegister" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".welcome.EntendPhonrNumber" >
+        </activity>
+        <activity android:name=".welcome.LoginAndLogin" >
+        </activity>
+        <activity android:name=".welcome.Register" >
+        </activity>
+        <activity android:name=".welcome.SetNewPassword" >
+        </activity>
+        <activity android:name=".welcome.SettingUp" >
         </activity>
     </application>
 

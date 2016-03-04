@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/image_write_phone_return"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@drawable/rub_course_back_icon"
+            android:src="@drawable/rub_course_back_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/title1_color_black"
+            android:text="@string/enter_a_phone_number"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@color/backgroud_color" />
+
+    <EditText
+        android:id="@+id/edit_write_phont_phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="@string/plese_phone_number"
+        android:inputType="phone"
+         android:textSize="14sp"
+        android:padding="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroud_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="15dp" >
+
+        <EditText
+            android:id="@+id/edit_write_phont_validation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             android:textSize="14sp"
+            android:background="@android:color/white"
+            android:hint="@string/plese_phone_validation_code" />
+
+        <TextView
+            android:id="@+id/text_write_phont_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+             android:textSize="11sp"
+             android:textColor="@color/other_text_gray"
+            android:text="@string/get_verification_code" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_write_phont_next_step"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_corners_and_solid"
+        android:text="@string/next_step"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="11sp"
+            android:text="@string/read_and_agree_to" />
+
+        <TextView
+            android:id="@+id/text_write_phone_service_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="@string/the_terms_of_service"
+            android:textColor="@color/auxiliary_color_orange" />
+    </LinearLayout>
+
+</LinearLayout>

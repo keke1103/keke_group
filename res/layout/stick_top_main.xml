@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:id="@+id/stick_top_linear"
+    android:paddingTop="10dp">
+    <!-- 置顶的布局界面 -->
+    <TextView 
+        android:id="@+id/stick_top"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stick_top_style"
+        android:gravity="center"
+        android:text="@string/stick_top"
+        android:textColor="#f53f99"
+        android:textSize="12sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/stick_top"
+        android:layout_toEndOf="@+id/stick_top"
+        android:text="@string/china_literature_ceremony"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/title2_color_black"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:background="@color/drive_line_color"/>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView 
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rub_course_back_icon"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/logginregister"
+            android:gravity="center"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@color/background">
+ <ImageView 
+            android:layout_marginTop="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/register_and_login_icon"
+            android:layout_gravity="center_horizontal"/>
+ <ImageView 
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:src="@drawable/rub_course_login_and_register_font"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"/>
+ </LinearLayout>
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="2"
+     android:background="@color/background"
+     android:orientation="vertical">
+ <Button 
+      android:id="@+id/tv_fast_register"
+      android:layout_width="220dp"
+      android:layout_height="37dp"
+      android:background="@drawable/register_selector_btn"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/fastregister"
+      />
+ <Button 
+      android:id="@+id/tv_login"
+      android:layout_width="220dp"
+      android:layout_height="37dp"
+      android:background="@drawable/login_selector_btn"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/loggin"
+      android:layout_marginTop="10dp"/>
+ 
+</LinearLayout>
+ 
+</LinearLayout>

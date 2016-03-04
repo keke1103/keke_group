@@ -5,13 +5,13 @@
     android:orientation="vertical"
     tools:context="com.groupkk.ceke.MainActivity" >
 
-    <LinearLayout
+    <android.support.v4.view.ViewPager
         android:id="@+id/layou_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical" >
-    </LinearLayout>
+    </android.support.v4.view.ViewPager>
 
     <View
         android:layout_width="match_parent"
@@ -34,6 +34,7 @@
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/selector_for_homepage"
+            android:checked="true"
             android:gravity="center_horizontal"
             android:text="@string/homepage"
             android:textColor="@color/main_orange" />
