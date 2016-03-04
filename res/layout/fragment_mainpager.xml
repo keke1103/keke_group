@@ -51,7 +51,6 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:contentDescription="@string/abc_action_bar_home_description"
                 android:padding="6dp"
                 android:src="@drawable/rub_course_search" />
         </LinearLayout>
