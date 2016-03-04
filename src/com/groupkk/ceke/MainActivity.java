@@ -81,7 +81,6 @@ public class MainActivity extends FragmentActivity {
 		}
 	};
 
-	@SuppressWarnings("deprecation")
 	private void initRadiaoBut() {
 		for (int i = 0; i < bottomRadio.length; i++) {
 			if (bottomRadio[i].isChecked()) {
