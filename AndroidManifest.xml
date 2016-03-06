@@ -35,6 +35,25 @@
         </activity>
         <activity android:name=".welcome.SettingUp" >
         </activity>
+        <activity android:name="com.groupkk.ceke.MoreClassActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.CompanyDetailActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.ClassDetailActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.MyApplyRecordActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.MyCollectActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.PersonalInformationActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.welcome.MessageActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.welcome.AboutSuccessActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.welcome.MyPostsActivity" >
+        </activity>
+        <activity android:name="com.groupkk.ceke.MusicClassActivity"></activity>
     </application>
 
 </manifest>

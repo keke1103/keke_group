@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RadioGroup
+        android:id="@+id/class_type_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/type0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="start|center_vertical"
+            android:text="@string/all"
+            android:textColor="@color/main_text_gray"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/type1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/music_type1"
+            android:textColor="@color/main_text_gray"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/type2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/music_type2"
+            android:textColor="@color/main_text_gray"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/type3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/music_type3"
+            android:textColor="@color/main_text_gray"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/type4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="end|center_vertical"
+            android:text="@string/music_type4"
+            android:textColor="@color/main_text_gray"
+            android:textSize="13sp" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/type_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+    </GridView>
+
+</LinearLayout>

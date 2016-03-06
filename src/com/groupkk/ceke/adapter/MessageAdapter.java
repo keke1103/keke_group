@@ -1,10 +1,9 @@
-﻿package com.groupkk.ceke.adapter;
+package com.groupkk.ceke.adapter;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import com.groupkk.ceke.R;
-import com.groupkk.ceke.fragment.CircleData;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,26 +12,24 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-/**
- * 圈子listview的baseAdapter
- * 
- * @author Administrator
- *
- */
-public class CircleBaseAdapter extends BaseAdapter {
-	ArrayList<CircleData> list;
+public class MessageAdapter extends BaseAdapter {
 	Context context;
 	LayoutInflater inflater;
+	List<Map<String, String>> list;
 
-	public CircleBaseAdapter() {
+	public MessageAdapter() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CircleBaseAdapter(ArrayList<CircleData> list, Context context) {
-		// TODO Auto-generated constructor stub
-		this.list = list;
+	public MessageAdapter(Context context, List<Map<String, String>> list) {
 		this.context = context;
+		this.list = list;
 		inflater = LayoutInflater.from(context);
+	}
+
+	public void setData(List<Map<String, String>> list) {
+		this.list = list;
+		this.notifyDataSetChanged();
 	}
 
 	@Override
@@ -59,25 +56,21 @@ public class CircleBaseAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		ViewHolder holder;
 		if (convertView == null) {
-			convertView = inflater.inflate(R.layout.circle_layout_main, null);
+			convertView = inflater.inflate(R.layout.list_view_message, null);
 			holder = new ViewHolder();
-			holder.name = (TextView) convertView.findViewById(R.id.circle_name);
-			holder.culture = (TextView) convertView.findViewById(R.id.circle_culture);
-			holder.number = (TextView) convertView.findViewById(R.id.circle_number);
+			holder.Information = (TextView) convertView.findViewById(R.id.text_message_list_message);
+			holder.time = (TextView) convertView.findViewById(R.id.text_message_list_time);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
-		CircleData data = list.get(position);
-		holder.name.setText(data.getCircleName());
-		holder.culture.setText(data.getCircleCulture());
-		holder.number.setText(data.getPeopleNumber());
+		holder.Information.setText(list.get(position).get("message"));
+		holder.time.setText(list.get(position).get("time"));
 		return convertView;
 	}
 
 	class ViewHolder {
-		TextView name;
-		TextView culture;
-		TextView number;
+		TextView Information;
+		TextView time;
 	}
 }

@@ -51,6 +51,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="@drawable/rub_course_search"
                 android:padding="6dp"
                 android:src="@drawable/rub_course_search" />
         </LinearLayout>

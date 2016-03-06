@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/image_login_and_register_return"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@drawable/rub_course_back_icon"
+            android:src="@drawable/rub_course_back_icon" />
+
+        <TextView
+            android:id="@+id/text_login_and_register_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/about_success"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    -->
+
+    <include layout="@layout/title_layout" 
+        android:id="@+id/about_success_include"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroud_color" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_gray_background_style" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/it_has_accepted_the_invitation"
+        android:textColor="@color/other_text_gray" />
+
+</LinearLayout>

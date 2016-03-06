@@ -43,8 +43,7 @@ public class TypePagerFragment extends Fragment {
 
 		type_group.setOnCheckedChangeListener(groupChange);
 		changeClassType();
-		
-		
+
 		setLayoutData();
 		setLayoutData();
 		setLayoutData();

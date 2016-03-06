@@ -23,12 +23,17 @@
     <string name="sort">分类</string>
     <string name="ring">圈子</string>
     <string name="mine">我</string>
-    
+
     <!-- 分类 -->
 
     <string name="type_class">课程</string>
     <string name="type_jigou">机构</string>
-    
+    <string name="all">全部</string>
+    <string name="music_type1">钢琴</string>
+    <string name="music_type2">打击乐器</string>
+    <string name="music_type3">弦乐器</string>
+    <string name="music_type4">管乐器</string>
+
     <!-- 登录注册 -->
     <string name="logginregister">登录注册</string>
     <string name="fastregister">极速注册</string>
@@ -36,7 +41,6 @@
     <string name="start">开启你的学海无涯快乐蹭课!</string>
     <!-- 登录注册-登录 -->
     <string name="donedata">完善资料</string>
-    <string name="register">注册</string>
     <string name="tel_email">手机号/邮箱</string>
     <string name="password">密码</string>
     <string name="now_register">立即注册</string>
@@ -66,19 +70,19 @@
     <string name="aboutus">关于我们</string>
     <string name="cengke">蹭课</string>
     <string name="version">版本1.01</string>
-    <string name="describe">    登录双方的健康来说都放假了快捷付款谁开的房间发多少就开了房间卡死啦九分裤撒打开了房间爱死了开放接口连接爱上对方即可拉伸的解放路口</string>
+    <string name="describe">\t\t登录双方的健康来说都放假了快捷付款谁开的房间发多少就开了房间卡死啦九分裤撒打开了房间爱死了开放接口连接爱上对方即可拉伸的解放路口</string>
     <string name="serviceprotocol">服务条款</string>
     <string name="cqcompany">重庆科技有限公司</string>
 
-	
-	<!-- 圈子界面 -->
+    <!-- 圈子界面 -->
     <string name="circle">圈子</string>
     <string name="city_english">同城英语圈</string>
     <string name="love_english">热爱英语，疯狂英语</string>
     <string name="people_number">1050</string>
     <!-- 个人中心界面 -->
     <string name="personalCenter">个人中心</string>
-    <string name="login">登录|注册</string>
+    <string name="login_register">登录|注册</string>
+    <string name="register">注册</string>
     <string name="zero">0</string>
     <string name="subscribe">预约</string>
     <string name="acceptance_succeed">受理成功</string>
@@ -99,11 +103,19 @@
     <string name="creation_user_name">菜豆</string>
     <string name="comment_number">150</string>
     <string name="last_comment_time">30分钟前</string>
-	<!--yuanping-->
-   
+    
+    <!-- 机构界面 -->
+
+    <string name="yuyue">预约</string>
+    <string name="companyDetail">公司介绍</string>
+    <string name="time">MM-dd HH:mm</string>
+    <string name="detail">详情:</string>
+    <string name="joinClass">我想蹭她</string>
+    <!-- yuanping -->
+
     <string name="login_to_register">登录注册</string>
     <string name="speed_registered">极速注册</string>
-    
+    <string name="login">登录</string>
     <string name="login_immediately">立即登录</string>
     <string name="forgot_password">忘记密码?</string>
     <string name="perfect_information">完善资料</string>
@@ -122,16 +134,23 @@
     <string name="plese_phone_validation_code">请输入手机验证码</string>
     <string name="next_step">下一步</string>
     <string name="enter_a_phone_number">填写手机号</string>
-	<string name="setting_up">设置</string>
-	<string name="about_us">关于我们</string>
-	<string name="clear_the_cache">清空缓存</string>
-	<string name="withdraw_from_the_account">退出账号</string>
-	<string name="setting_up_data">2.01MB</string>
-	
-	<!--yanglin-->
-	<string name="set">设置</string>
- <string name="wipecache">清空缓存</string>
- <string name="exitaccount">退出账号</string>
- <string name="mycenter">个人中心</string>
-	
+    <string name="setting_up">设置</string>
+    <string name="about_us">关于我们</string>
+     <string name="about_success">约成功</string>
+    <string name="clear_the_cache">清空缓存</string>
+    <string name="withdraw_from_the_account">退出账号</string>
+    <string name="setting_up_data">2.01MB</string>
+<string name="unread">未阅读</string>
+    <string name="have_read">已阅读</string>
+    <string name="complete">全部</string>
+    <string name="message">消息</string>
+    <string name="learn_pa">学霸，赶紧去发帖吧</string>
+    <string name="timeStr">时间</string>
+    <string name="it_has_accepted_the_invitation">邀约已受理，尽快为您受理中～</string>
+    <!-- yanglin -->
+    <string name="set">设置</string>
+    <string name="wipecache">清空缓存</string>
+    <string name="exitaccount">退出账号</string>
+    <string name="mycenter">个人中心</string>
+
 </resources>

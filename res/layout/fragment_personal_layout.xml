@@ -13,6 +13,7 @@
         android:background="#ffffff" >
 
         <ImageView
+            android:id="@+id/title_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -47,6 +48,7 @@
             android:src="@drawable/rub_course_default_user_icon" />
 
         <TextView
+            android:id="@+id/user_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/personal_center_default_user"
@@ -68,6 +70,7 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -76,6 +79,7 @@
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/user_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/phone_number"
@@ -105,6 +109,7 @@
                 android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/personal_center_subscribe_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -136,6 +141,7 @@
                 android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/personal_center_acceptance_succeed_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -167,11 +173,12 @@
                 android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/personal_center_posted_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@+id/personal_center_posted"
+                android:layout_toRightOf="@id/personal_center_posted"
                 android:text="@string/zero"
                 android:textColor="#9B9B9B"
                 android:textSize="10sp" />
@@ -183,6 +190,7 @@
         android:layout_height="5dp" />
 
     <RelativeLayout
+        android:id="@+id/personal_center_apply_record_layout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#ffffff"
@@ -220,6 +228,7 @@
         android:layout_height="0.5dp" />
 
     <RelativeLayout
+        android:id="@+id/personal_center_posts_layout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#ffffff"
@@ -257,6 +266,7 @@
         android:layout_height="0.5dp" />
 
     <RelativeLayout
+        android:id="@+id/personal_center_collect_layout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#ffffff"
@@ -294,6 +304,7 @@
         android:layout_height="0.5dp" />
 
     <RelativeLayout
+        android:id="@+id/personal_center_setup_layout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#ffffff"

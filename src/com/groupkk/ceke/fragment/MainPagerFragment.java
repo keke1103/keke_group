@@ -1,13 +1,16 @@
 package com.groupkk.ceke.fragment;
 
+import com.groupkk.ceke.MoreClassActivity;
 import com.groupkk.ceke.R;
 import com.groupkk.ceke.view.MainItemView;
 import com.groupkk.ceke.view.MainItemView.ClassData;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.EditText;
@@ -59,17 +62,24 @@ public class MainPagerFragment extends Fragment {
 		user_hint = mView.findViewById(R.id.user_hint);
 		class_main_layout = (LinearLayout) mView.findViewById(R.id.class_main_layout);
 
-		
 		class_main_layout.addView(setClassTypeAndData());
 		class_main_layout.addView(setClassTypeAndData());
 		class_main_layout.addView(setClassTypeAndData());
-		
+
 	}
 
-	
-	private View setClassTypeAndData(){
-		
+	private View setClassTypeAndData() {
+
 		MainItemView itemView = new MainItemView(getActivity());
+
+		itemView.setMoreClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), MoreClassActivity.class);
+				startActivity(intent);
+			}
+		});
 		ClassData mData = new ClassData(null, getString(R.string.erhu), 2, getString(R.string.company), "乐器", "小学", 5);
 		ClassData[] datas = new ClassData[4];
 		for (int i = 0; i < datas.length; i++) {
@@ -77,6 +87,6 @@ public class MainPagerFragment extends Fragment {
 		}
 		itemView.setClassData(datas);
 		return itemView.getContentView();
-		
+
 	}
 }

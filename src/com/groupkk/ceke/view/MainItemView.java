@@ -1,9 +1,11 @@
 package com.groupkk.ceke.view;
 
+import com.groupkk.ceke.ClassDetailActivity;
 import com.groupkk.ceke.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -103,7 +105,7 @@ public class MainItemView {
 		}
 	}
 
-	private static class ClassItem {
+	public static class ClassItem {
 		ImageView class_image;
 		TextView class_title;
 		TextView class_sign_up_count;
@@ -112,8 +114,21 @@ public class MainItemView {
 		TextView class_leave;
 		View class_end_layout;
 		TextView class_remaining_day;
+		/**
+		 * 每个课程都可以跳转进入课程详情页面
+		 */
+		private OnClickListener l = new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(), ClassDetailActivity.class);
+				intent.putExtra("className", class_title.getText().toString());
+				v.getContext().startActivity(intent);
+			}
+		};
 
 		public ClassItem(View c) {
+			c.setOnClickListener(l);
 			class_image = (ImageView) c.findViewById(R.id.item_image);
 			class_title = (TextView) c.findViewById(R.id.item_title);
 			class_sign_up_count = (TextView) c.findViewById(R.id.item_sing_up_count);
@@ -124,7 +139,8 @@ public class MainItemView {
 			class_remaining_day = (TextView) c.findViewById(R.id.item_remaining_day);
 		}
 
-		void setData(Bitmap b, String title, int sign_c, String company, String type, String leave, int remaining) {
+		public void setData(Bitmap b, String title, int sign_c, String company, String type, String leave,
+				int remaining) {
 			class_image.setImageBitmap(b);
 			class_title.setText(title);
 			class_sign_up_count.setText(String.format("已报名\t%d\t人", sign_c));
@@ -137,7 +153,7 @@ public class MainItemView {
 			}
 		}
 
-		void setData(ClassData data) {
+		public void setData(ClassData data) {
 			setData(data.b, data.title, data.sign_up_count, data.company, data.type, data.leave, data.remaining_day);
 		}
 	}

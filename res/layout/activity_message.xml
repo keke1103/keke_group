@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/message_include"
+        layout="@layout/title_layout" />
+
+    <RadioGroup
+        android:id="@+id/radio_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/text_message_unread"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/unread"
+            android:textColor="@color/other_text_gray"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:background="@color/backgroud_color" />
+
+        <RadioButton
+            android:id="@+id/text_message_have_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/have_read"
+            android:textColor="@color/other_text_gray"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:background="@color/backgroud_color" />
+
+        <RadioButton
+            android:id="@+id/text_message_complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/complete"
+            android:textColor="@color/other_text_gray"
+            android:checked="true"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroud_color" />
+
+    <ListView
+        android:id="@+id/list_view_message_unread"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/list_view_message_have_read"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/list_view_message_complete"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

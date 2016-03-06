@@ -48,21 +48,21 @@ public class EntendPhonrNumber extends Activity {
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			switch (arg0.getId()) {
-			case R.id.image_write_phone_return://返回上一个页面
+			case R.id.image_write_phone_return:// 返回上一个页面
 				finish();
 				break;
 
-			case R.id.button_write_phont_next_step://进行下一步的按钮
-				Intent intent=new Intent(EntendPhonrNumber.this,Register.class);
+			case R.id.button_write_phont_next_step:// 进行下一步的按钮
+				Intent intent = new Intent(EntendPhonrNumber.this, Register.class);
 				startActivity(intent);
 				break;
 
-			case R.id.text_write_phone_service_terms://蹭课服务条款
+			case R.id.text_write_phone_service_terms:// 蹭课服务条款
 				finish();
 				break;
 
-			case R.id.text_write_phont_get_code://获取验证码
-				
+			case R.id.text_write_phont_get_code:// 获取验证码
+
 				break;
 			default:
 				break;
