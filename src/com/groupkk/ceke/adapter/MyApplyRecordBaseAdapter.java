@@ -74,13 +74,13 @@ public class MyApplyRecordBaseAdapter extends BaseAdapter {
 		}
 		holder.textView3.setText(data.getChairName());
 		holder.textView4.setText(data.getChairTime());
-		if (data.getAccept()==1) {
+		if (data.getAccept() == 1) {
 			holder.textView5.setText("已受理");
 			holder.textView5.setTextColor(context.getResources().getColor(R.color.auxiliary_green_));
-		} else if(data.getAccept()==-1){
+		} else if (data.getAccept() == -1) {
 			holder.textView5.setText("未受理");
 			holder.textView5.setTextColor(context.getResources().getColor(R.color.main_red));
-		}else{
+		} else {
 			holder.textView5.setText("");
 		}
 

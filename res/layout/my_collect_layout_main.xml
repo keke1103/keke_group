@@ -1,52 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal" >
-    <ImageView 
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
         android:id="@+id/my_collect_image"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:layout_height="70dp"
         android:layout_weight="1"
-        android:src="@drawable/ic_launcher"/>
-   <LinearLayout 
-       android:layout_width="0dp"
-       android:layout_height="wrap_content"
-       android:layout_weight="2"
-       android:orientation="vertical">
-       <TextView 
-           android:id="@+id/my_collect_text1"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="二胡十段兴趣班"/>
-       <TextView 
-           android:id="@+id/my_collect_text2"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="已报1人     渝中汉昌"/>
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content">
-           <TextView 
-               android:id="@+id/my_collect_text3"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="乐器"/>
-           <TextView 
-               android:id="@+id/my_collect_text4"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_toRightOf="@+id/my_collect_text3"
-               android:layout_marginLeft="3dp"
-               android:text="小学"/>
-           <TextView 
-               android:id="@+id/my_collect_text5"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentRight="true"
-               android:layout_marginRight="5dp"
-               android:text="余1天"/>
-       </RelativeLayout>
-   </LinearLayout>
+        android:background="#eeeeee"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_collect_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="二胡十段兴趣班"
+            android:textColor="@color/title1_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_collect_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_collect_text1"
+            android:layout_marginTop="3dp"
+         
+            android:text="已报1人     渝中汉昌"
+            android:textColor="@color/other_text_gray"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_collect_text2"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/my_collect_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_for_type_text"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="乐器"
+                android:textColor="@color/main_text_gray"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/my_collect_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/my_collect_text3"
+                android:layout_toRightOf="@id/my_collect_text3"
+                android:background="@drawable/shape_for_type_text"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="小学"
+                android:textColor="@color/main_text_gray"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yu"
+                    android:textColor="@color/main_text_gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/my_collect_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/one"
+                    android:textColor="@color/main_orange"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tian"
+                    android:textColor="@color/main_text_gray"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
 </LinearLayout>

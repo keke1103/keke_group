@@ -43,12 +43,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
                     android:text="@string/yu"
                     android:textColor="@color/main_text_gray"
                     android:textSize="11sp" />
 
                 <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
                     android:id="@+id/my_apply_record_layout_text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

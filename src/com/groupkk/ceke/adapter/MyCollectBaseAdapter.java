@@ -68,10 +68,15 @@ public class MyCollectBaseAdapter extends BaseAdapter {
 		MyCollectData data = list.get(position);
 		holder.imageView.setImageResource(data.getImageID());
 		holder.textView1.setText(data.getName());
-		holder.textView2.setText(data.getApplyNumber());
+		holder.textView2.setText("已报名" + data.getApplyNumber() + "人\t\t" + data.getCompanyName());
 		holder.textView3.setText(data.getYueqi());
 		holder.textView4.setText(data.getGrade());
-		holder.textView5.setText(data.getApplyTime());
+		holder.textView5.setText("" + data.getApplyTime());
+		if (data.getApplyTime() <= 3) {
+			holder.textView5.setTextColor(context.getResources().getColor(R.color.main_orange));
+		} else {
+			holder.textView5.setTextColor(context.getResources().getColor(R.color.main_text_gray));
+		}
 		return convertView;
 	}
 

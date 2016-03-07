@@ -3,13 +3,23 @@
 public class MyCollectData {
 	int imageID;// 图片ID
 	String name;// 兴趣班的名字
-	String applyNumber;// 报名人数
+	int applyNumber;// 报名人数
+	String companyName;// 公司名字
+
 	String yueqi;// 报名的类型
 	String grade;// 报名的年级
-	String applyTime;// 报名的剩余天数
+	int applyTime;// 报名的剩余天数
 
 	public int getImageID() {
 		return imageID;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 
 	public void setImageID(int imageID) {
@@ -24,11 +34,11 @@ public class MyCollectData {
 		this.name = name;
 	}
 
-	public String getApplyNumber() {
+	public int getApplyNumber() {
 		return applyNumber;
 	}
 
-	public void setApplyNumber(String applyNumber) {
+	public void setApplyNumber(int applyNumber) {
 		this.applyNumber = applyNumber;
 	}
 
@@ -48,11 +58,11 @@ public class MyCollectData {
 		this.grade = grade;
 	}
 
-	public String getApplyTime() {
+	public int getApplyTime() {
 		return applyTime;
 	}
 
-	public void setApplyTime(String applyTime) {
+	public void setApplyTime(int applyTime) {
 		this.applyTime = applyTime;
 	}
 }
