@@ -7,23 +7,58 @@ import com.groupkk.ceke.fragment.CircleClassifyData;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class CircleClassifyActivity extends Activity {
 	ListView listView;
 	ArrayList<CircleClassifyData> list;
 	CircleClassifyBaseAdapter circleClassifyBaseAdapter;
+	View back;
+	View ball;
+	private OnClickListener click = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			switch (v.getId()) {
+			case R.id.title_back:
+				finish();
+				break;
+			case R.id.fab:
+				Toast.makeText(getApplicationContext(), "insert", Toast.LENGTH_SHORT).show();
+				break;
+			default:
+				break;
+			}
+
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.circle_classify_main);
-		listView = (ListView) findViewById(R.id.circle_classify_list);
+		findView();
+		initView();
 		getData();
 		circleClassifyBaseAdapter = new CircleClassifyBaseAdapter(list, this);
 		listView.setAdapter(circleClassifyBaseAdapter);
 
+	}
+
+	private void findView() {
+		back = findViewById(R.id.title_back);
+		ball = findViewById(R.id.fab);
+
+		listView = (ListView) findViewById(R.id.circle_classify_list);
+	}
+
+	private void initView() {
+		back.setOnClickListener(click);
+		ball.setOnClickListener(click);
 	}
 
 	public void getData() {

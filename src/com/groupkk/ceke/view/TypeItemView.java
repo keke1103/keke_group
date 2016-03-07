@@ -54,7 +54,7 @@ public class TypeItemView {
 			text.setBackground(drawable);
 			text.setGravity(Gravity.CENTER);
 			text.setId(i + 1);
-			text.setPadding(setDp(18), setDp(3), setDp(18), setDp(3));
+			text.setPadding(setDp(15), setDp(3), setDp(15), setDp(3));
 			text.setTextColor(mContext.getResources().getColor(R.color.title2_color_black));
 			text.setTextSize(13);
 			text.setText(infos[i]);

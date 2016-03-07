@@ -1,8 +1,7 @@
 package com.groupkk.ceke.view;
 
-
 import com.groupkk.ceke.R;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,6 +19,7 @@ import android.view.View;
 /**
  * Created by kk0927 on 2016/2/16.
  */
+@SuppressLint("ClickableViewAccessibility")
 public class Ball extends View {
 
 	public Ball(Context context) {
@@ -63,6 +63,7 @@ public class Ball extends View {
 
 	int mParentTopEdge;
 	int mParentLeftEdge;
+	@SuppressWarnings("deprecation")
 	GestureDetector mDetector = new GestureDetector(new GestureDetector.OnGestureListener() {
 		@Override
 		public boolean onDown(MotionEvent e) {
@@ -104,20 +105,21 @@ public class Ball extends View {
 
 		@Override
 		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-			//setSpeed(velocityX, velocityY);
-			//start();
+			// setSpeed(velocityX, velocityY);
+			// start();
 			return false;
 		}
 	});
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-
 		mDetector.onTouchEvent(event);
-
+		super.onTouchEvent(event);
 		return true;
+
 	}
 
+	@SuppressLint("HandlerLeak")
 	private Handler mHandler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
