@@ -6,13 +6,25 @@
 
     <!-- 我的报名记录 -->
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="我的报名记录"
-        android:textSize="14sp" />
+        android:layout_height="40dp"
+        android:background="#ffffff">
+        <ImageView 
+            android:id="@+id/my_apply_record_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rub_course_back_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的报名记录"
+            android:textSize="16sp"
+            android:textColor="#292929"/>
+    </RelativeLayout>
 
     <RadioGroup
         android:id="@+id/record_group"
@@ -30,6 +42,7 @@
             android:button="@null"
             android:gravity="center"
             android:text="全部"
+            android:checked="true"
             android:textColor="@color/main_text_gray"
             android:textSize="13sp" />
 

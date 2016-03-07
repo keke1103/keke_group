@@ -7,6 +7,9 @@ import com.groupkk.ceke.util.MyApplyRecordData;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -20,10 +23,28 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
  */
 public class MyApplyRecordActivity extends Activity {
 	ListView listview;
+	ImageView backImage;
 	ArrayList<MyApplyRecordData> list;
+	ArrayList<MyApplyRecordData> list1;
 	MyApplyRecordBaseAdapter myApplyRecordBaseAdapter;
 	RadioGroup group;
 	RadioButton uButton[];
+
+	private OnClickListener click = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			switch (v.getId()) {
+			case R.id.my_apply_record_back_icon:
+				finish();
+				break;
+
+			default:
+				break;
+			}
+
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +52,13 @@ public class MyApplyRecordActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.my_apply_record_main);
 		listview = (ListView) findViewById(R.id.my_apply_record_listview);
+		backImage = (ImageView) findViewById(R.id.my_apply_record_back_icon);
 		findView();
 		changed();
 		getData();
 		myApplyRecordBaseAdapter = new MyApplyRecordBaseAdapter(list, this);
 		listview.setAdapter(myApplyRecordBaseAdapter);
+		backImage.setOnClickListener(click);
 	}
 
 	private void findView() {
