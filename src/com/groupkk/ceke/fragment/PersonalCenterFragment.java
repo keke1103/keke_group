@@ -3,6 +3,7 @@
 import com.groupkk.ceke.MyApplyRecordActivity;
 import com.groupkk.ceke.MyCollectActivity;
 import com.groupkk.ceke.R;
+import com.groupkk.ceke.welcome.MyPostsActivity;
 import com.groupkk.ceke.welcome.SettingUp;
 
 import android.content.Intent;
@@ -39,6 +40,7 @@ public class PersonalCenterFragment extends Fragment {
 	View collect;
 	RelativeLayout relativeLayout;
 	RelativeLayout relativeLayout1;
+	RelativeLayout relativeLayout2;
 	private OnClickListener click = new OnClickListener() {
 
 		@Override
@@ -55,6 +57,10 @@ public class PersonalCenterFragment extends Fragment {
 			case R.id.personal_center_setup_layout:
 				Intent intent2 = new Intent(getActivity(),SettingUp.class);
 				startActivity(intent2);
+				break;
+			case R.id.personal_center_posts_layout:
+				Intent intent3 = new Intent(getActivity(),MyPostsActivity.class);
+				startActivity(intent3);
 				break;
 			default:
 				break;
@@ -94,12 +100,14 @@ public class PersonalCenterFragment extends Fragment {
 		collect = mView.findViewById(R.id.personal_center_collect_layout);
 		relativeLayout=(RelativeLayout)mView.findViewById(R.id.personal_center_collect_layout);
 		relativeLayout1=(RelativeLayout)mView.findViewById(R.id.personal_center_setup_layout);
+		relativeLayout2=(RelativeLayout)mView.findViewById(R.id.personal_center_posts_layout);
 	}
 
 	private void initView() {
 		apply_record.setOnClickListener(click);
         relativeLayout.setOnClickListener(click);
         relativeLayout1.setOnClickListener(click);
+        relativeLayout2.setOnClickListener(click);
 	}
 
 }
