@@ -1,8 +1,10 @@
 package com.groupkk.ceke.fragment;
 
 import com.groupkk.ceke.R;
+import com.groupkk.ceke.view.JiGouTypeItemView;
 import com.groupkk.ceke.view.TypeItemView;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -68,12 +70,35 @@ public class TypePagerFragment extends Fragment {
 		main_layout.addView(item.getContentView());
 	}
 
+	private void setLayoutJiGouData(String name) {
+		JiGouTypeItemView item = new JiGouTypeItemView(getActivity());
+		item.setTitle(getString(R.string.musicclass));
+		item.setTitle(name);
+		
+		String[] infos = new String[] { "音乐类", "语言/国学", "设计类", "生活类"};
+		Bitmap[] bs = new Bitmap[4];
+		item.setInfo(infos, bs);
+
+		main_layout.addView(item.getContentView());
+	}
+
 	@SuppressWarnings("deprecation")
 	private void changeClassType() {
 		for (int i = 0; i < type_btns.length; i++) {
 			if (type_btns[i].isChecked()) {
 				type_btns[i].setTextColor(getResources().getColor(R.color.main_orange));
 				type_btn_bottom[i].setVisibility(View.VISIBLE);
+				if (i == 0) {
+					main_layout.removeAllViews();
+					setLayoutData();
+					setLayoutData();
+					setLayoutData();
+				} else {
+					main_layout.removeAllViews();
+					setLayoutJiGouData("音乐类");
+					setLayoutJiGouData("语言/国学");
+					setLayoutJiGouData("设计类");
+				}
 			} else {
 				type_btns[i].setTextColor(getResources().getColor(R.color.title2_color_black));
 				type_btn_bottom[i].setVisibility(View.INVISIBLE);
