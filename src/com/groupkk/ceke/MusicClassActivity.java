@@ -42,6 +42,7 @@ public class MusicClassActivity extends Activity {
 		}
 	};
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);

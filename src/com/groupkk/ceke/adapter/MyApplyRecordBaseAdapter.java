@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import com.groupkk.ceke.R;
 import com.groupkk.ceke.util.MyApplyRecordData;
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

@@ -25,10 +25,9 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="已报1人     渝中汉昌"/>
-       <LinearLayout 
+       <RelativeLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="horizontal">
+           android:layout_height="wrap_content">
            <TextView 
                android:id="@+id/my_collect_text3"
                android:layout_width="wrap_content"
@@ -38,12 +37,16 @@
                android:id="@+id/my_collect_text4"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/my_collect_text3"
+               android:layout_marginLeft="3dp"
                android:text="小学"/>
            <TextView 
                android:id="@+id/my_collect_text5"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="5dp"
                android:text="余1天"/>
-       </LinearLayout>
+       </RelativeLayout>
    </LinearLayout>
 </LinearLayout>

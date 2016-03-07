@@ -12,13 +12,13 @@
         android:layout_height="40dp"
         android:background="#ffffff" >
 
-        <ImageView
+    <!--     <ImageView
             android:id="@+id/title_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/rub_course_back_icon" />
+            android:src="@drawable/rub_course_back_icon" /> -->
 
         <TextView
             android:layout_width="wrap_content"

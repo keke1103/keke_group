@@ -27,11 +27,13 @@ public class MainFragmentAdapter extends FragmentPagerAdapter {
 
 	List<Fragment> fragments;
 
+	@Override
 	public Fragment getItem(int arg0) {
 
 		return fragments.get(arg0);
 	}
 
+	@Override
 	public int getCount() {
 
 		return fragments.size();

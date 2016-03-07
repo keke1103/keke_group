@@ -25,6 +25,7 @@ public class MyApplyRecordActivity extends Activity {
 	RadioGroup group;
 	RadioButton uButton[];
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);

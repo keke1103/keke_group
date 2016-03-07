@@ -52,6 +52,7 @@ public class ClassDetailActivity extends Activity {
 		}
 	};
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);

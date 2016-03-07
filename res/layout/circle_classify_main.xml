@@ -56,17 +56,15 @@
             android:layout_marginRight="16dp" />
     </LinearLayout>
 
-    <ImageView
+    <com.groupkk.ceke.view.Ball
         android:id="@+id/fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/rub_course_build_posts_non_sel"
-        android:contentDescription="@drawable/rub_course_build_posts_non_sel"/>
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"/>
 
 </RelativeLayout>

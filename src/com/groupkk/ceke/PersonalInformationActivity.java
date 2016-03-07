@@ -39,7 +39,7 @@ public class PersonalInformationActivity extends Activity {
 
 	public void getDialog() {
 		LinearLayout linearLayout = new LinearLayout(this); // 定义的线性布局
-		LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT); // 定义控件的宽、高
+		LayoutParams layoutParams = new LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT); // 定义控件的宽、高
 		linearLayout.setLayoutParams(layoutParams);
 		linearLayout.setOrientation(1);
 
